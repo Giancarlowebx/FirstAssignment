@@ -12,12 +12,23 @@
     <style>
         body {
             font-family: sans-serif;
+            font-weight: bold;
+        }
+        p {
+            color: rgb(204, 204, 204);
+            font-size: 17px;
         }
         .card .card-body>* {
             padding-top: .5em;
         }
         .card .card-body > h5 {
             font-weight: 700;
+        }
+        .sixthsection .card .card-body {
+            background-color: rgb(0, 97, 189);
+        }
+        .sixthsection .card .card-body > * {
+            color: rgb(204, 204, 204);
         }
         li {
             list-style-type: none;
@@ -37,11 +48,7 @@
             background-color: #0d6efd;
         }
         .secondsection{
-            background-color: #0d6efd;
             height: 500px;
-        }
-        .secondsection .firstcol {
-            background-color: green;
         }
         .thirdsection{
             justify-content: center;
@@ -62,132 +69,157 @@
             background-color: rgb(248, 248, 248);
             height: 500px;
         }
+        .seventhsection li>a {
+            color: rgb(204, 204, 204);;
+        }
+        .seventhsection h6 {
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
-    <div class="container m-auto">
+    <div class="container1 m-auto">
         <!-- navbar -->
-        <div class="row firstsection">
-            <div class="col-sm-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-                    <div class="container-fluid">
-                    <a class="navbar-brand text-light" href="#">
-                    <img src="extra/image/code.png" alt="" width="30" height="24" class="d-inline-block align-text-top"><b>WEB DEV</b></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hosting</a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Hosting 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Hosting 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Hosting 3</a></li>
+        <div class="bg-primary">
+            <div class="container">
+                <div class="row firstsection">
+                    <div class="col-sm-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                            <div class="container-fluid">
+                            <a class="navbar-brand text-light" href="#">
+                            <img src="extra/image/code.png" alt="" width="30" height="24" class="d-inline-block align-text-top"><b>WEB DEV</b></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarScroll">
+                                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Hosting</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">Hosting 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Hosting 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Hosting 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Domains</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Resources
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">Resources 111</a></li>
+                                            <li><a class="dropdown-item" href="#">Resources 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Resources 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Company
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                            <li><a class="dropdown-item" href="#">Company 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Company 2</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Company 3</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Domains</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Resources
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Resources 111</a></li>
-                                    <li><a class="dropdown-item" href="#">Resources 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Resources 3</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Company
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                    <li><a class="dropdown-item" href="#">Company 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Company 2</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Company 3</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <button class="btn btn-primary me-2 active" type="submit">Login</button>
-                            <button class="btn btn-info" type="submit">Sign Up</button>
-                        </form>
+                                <form class="d-flex">
+                                    <button class="btn btn-primary me-2 active" type="submit">Login</button>
+                                    <button class="btn btn-info" type="submit">Sign Up</button>
+                                </form>
+                            </div>
+                            </div>
+                        </nav>
                     </div>
-                    </div>
-                </nav>
+                </div>
             </div>
         </div>
+        
+        
         <!-- end of navbar -->     
 
         <!-- Second Section -->
-        <div class="row secondsection bg-primary">
-            <div class="col-sm-6 p-5 m-auto">
-                <h1 class="text-light">Cloud Hosting</h1>
-                <p class="text-light">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it.</p>
-                <button class="btn btn-primary me-2 active" type="submit">Start free 30-days trial</button>
-            </div>
-            <div class="col-sm-6 p-4">
-                <img width="500" height="400" src="extra/image/webhosting.png" alt="">
+        <div class="bg-primary">
+            <div class="container">
+                <div class="row secondsection">
+                    <div class="col-sm-6 p-5 m-auto">
+                        <h1 class="text-light"><b>Cloud Hosting</b></h1>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it.</p>
+                        <button class="btn btn-primary me-2 active" type="submit">Start free 30-days trial</button>
+                    </div>
+                    <div class="col-sm-6 p-4">
+                        <img width="500" height="400" src="extra/image/webhosting.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
+        
         <!-- End Second Section -->
 
         <!-- Third Section logo -->
-        <div class="row thirdsection bg-light">
-            <div class="col m-auto">
-                <a href="#"><img class="w-50 mx-auto d-block" style="height: 50px; justify-content: center;" src="extra/image/cpanel.png" alt=""></a>
-            </div>
-            <div class="col m-auto">
-                <a href="#"><img class="w-50 mx-auto d-block" style="height: 50px ; justify-content: center;" src="extra/image/acentos.png" alt=""></a>
-            </div>
-            <div class="col m-auto">
-                <a href="#"><img class="w-50 mx-auto d-block" style="height: 30px ; justify-content: center;" src="extra/image/Debian_logo.png" alt=""></a>
-            </div>
-            <div class="col m-auto">
-                <a href="#"><img class="w-50 mx-auto d-block" style="height: 20px ; justify-content: center;" src="extra/image/Nginx.png" alt=""></a>
-            </div>
-            <div class="col m-auto">
-                <a href="#"><img class="w-70 mx-auto d-block" style="height: 50px ; justify-content: center;" src="extra/image/vmware.png" alt=""></a>
+        <div class="bg-light">
+            <div class="container">
+                <div class="row thirdsection">
+                    <div class="col m-auto">
+                        <a href="#"><img class="w-50 mx-auto d-block" style="height: 50px; justify-content: center;" src="extra/image/cpanel.png" alt=""></a>
+                    </div>
+                    <div class="col m-auto">
+                        <a href="#"><img class="w-50 mx-auto d-block" style="height: 50px ; justify-content: center;" src="extra/image/acentos.png" alt=""></a>
+                    </div>
+                    <div class="col m-auto">
+                        <a href="#"><img class="w-50 mx-auto d-block" style="height: 30px ; justify-content: center;" src="extra/image/Debian_logo.png" alt=""></a>
+                    </div>
+                    <div class="col m-auto">
+                        <a href="#"><img class="w-50 mx-auto d-block" style="height: 20px ; justify-content: center;" src="extra/image/Nginx.png" alt=""></a>
+                    </div>
+                    <div class="col m-auto">
+                        <a href="#"><img class="w-70 mx-auto d-block" style="height: 50px ; justify-content: center;" src="extra/image/vmware.png" alt=""></a>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End Third Section -->
 
         <!-- Fourth Section Why Choose Us -->
-        <div class="row fourthsection p-1">
-            <div class="col-sm-12 m-auto">
-                <h2 style="text-align: center;"><b>Why choose us</b></h2>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fas fa-file-alt"></i>
-                        <h5 class="card-title">Predictable Pricing</h5>
-                        <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <a href="#" class="btn btn-primary">Pricing</a>
+        <div class="bg-light">
+            <div class="container">
+                <div class="row fourthsection p-1">
+                    <div class="col-sm-12 m-auto">
+                        <h2 style="text-align: center;"><b>Why choose us</b></h2>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fas fa-dot-circle"></i>
-                        <h5 class="card-title">World-class service</h5>
-                        <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <a href="#" class="btn btn-primary">Support</a>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-file-alt"></i>
+                                <h5 class="card-title">Predictable Pricing</h5>
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <a href="#" class="btn btn-primary">Pricing</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fas fa-shield-alt"></i>
-                        <h5 class="card-title">Reliable platform</h5>
-                        <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <a href="#" class="btn btn-primary">Security</a>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-dot-circle"></i>
+                                <h5 class="card-title">World-class service</h5>
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <a href="#" class="btn btn-primary">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fas fa-shield-alt"></i>
+                                <h5 class="card-title">Reliable platform</h5>
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <a href="#" class="btn btn-primary">Security</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -195,148 +227,160 @@
         <!-- End Fourth Section -->
 
         <!-- Fifth Section Products -->
-        <div class="row fifthsection">
-            <div class="col-sm-12 m-auto">
-                <h2 style="text-align: center;"><b>Products</b></h2>
-            </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-cubes"></i>
-                        <h5 class="card-title">Startup</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn-primary">Get Started</a>
+        <div class="bg-light">
+            <div class="container">
+                <div class="row fifthsection">
+                    <div class="col-sm-12 m-auto">
+                        <h2 style="text-align: center;"><b>Products</b></h2>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-cubes"></i>
+                                <h5 class="card-title">Startup</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="#" class="btn btn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-cubes"></i>
+                                <h5 class="card-title">Advanced</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="#" class="btn btn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-cubes"></i>
+                                <h5 class="card-title">Business</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="#" class="btn btn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-cubes"></i>
+                                <h5 class="card-title">Enterprise</h5>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="#" class="btn btn-primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="text-secondary text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-cubes"></i>
-                        <h5 class="card-title">Advanced</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-cubes"></i>
-                        <h5 class="card-title">Business</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-cubes"></i>
-                        <h5 class="card-title">Enterprise</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <p class="text-secondary text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
         <!-- End Fifth Section  -->
 
         <!-- Sixth Section Statistics -->
-        <div class="row sixthsection bg-primary">
-            <div class="col-sm-12 m-auto">
-                <h2 style="text-align: center; color: aliceblue;"><b>Statistics</b></h2>
-            </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-server"></i>
-                        <h6><b>12</b></h6>
-                        <span>Datacenters</span>
+        <div class="bg-primary">
+            <div class="container">
+                <div class="row sixthsection">
+                    <div class="col-sm-12 m-auto">
+                        <h2 style="text-align: center; color: aliceblue;"><b>Statistics</b></h2>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-server"></i>
+                                <h6><b>12</b></h6>
+                                <span>Datacenters</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-server"></i>
+                                <h6><b>+1M</b></h6>
+                                <span>Developers</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-server"></i>
+                                <h6><b>195</b></h6>
+                                <span>Countries</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <i class="fas fa-server"></i>
+                                <h6><b>78M</b></h6>
+                                <span>Droplets</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="text-white text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-server"></i>
-                        <h6><b>+1M</b></h6>
-                        <span>Developers</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-server"></i>
-                        <h6><b>195</b></h6>
-                        <span>Countries</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-server"></i>
-                        <h6><b>78M</b></h6>
-                        <span>Droplets</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12">
-                <p class="text-white text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
         </div>
         <!-- End Sixth Section -->
 
         <!-- Seventh Section -->
-        <div class="row seventhsection">
-            <div class="col-sm-12 m-auto">
-                <h2 style="text-align: center;"><b>Testimonials</b></h2>
-            </div>
-            <div class="col-sm-4">
-                <div class="card p-2">
-                    <div class="card-body">
-                        <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <div class="row">
-                            <div class="col-sm-6 m-auto">
-                                <img src="extra/image/code.png" alt="" width="30" height="24"><b>WEB DEV</b>
-                            </div>
-                            <div class="col-sm-6">
-                                <a href="#"><img class="w-50 mx-auto d-block" style="height: 30px ; justify-content: center; float: right;" src="extra/image/cpanel.png" alt=""></a>
+        <div class="bg-light">
+            <div class="container">
+                <div class="row seventhsection">
+                    <div class="col-sm-12 m-auto">
+                        <h2 style="text-align: center;"><b>Testimonials</b></h2>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card p-2">
+                            <div class="card-body">
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <div class="row">
+                                    <div class="col-sm-6 m-auto">
+                                        <img src="extra/image/code.png" alt="" width="30" height="24"><b>WEB DEV</b>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="#"><img class="w-50 mx-auto d-block" style="height: 30px ; justify-content: center; float: right;" src="extra/image/cpanel.png" alt=""></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card p-2">
-                    <div class="card-body">
-                        <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <div class="row">
-                            <div class="col-sm-6 m-auto">
-                                <img src="extra/image/code.png" alt="" width="30" height="24"><b>WEB DEV</b>
-                            </div>
-                            <div class="col-sm-6">
-                                <a href="#"><img class="w-50 mx-auto d-block" style="height: 30px ; justify-content: center; float: right;" src="extra/image/acentos.png" alt=""></a>
+                    <div class="col-sm-4">
+                        <div class="card p-2">
+                            <div class="card-body">
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <div class="row">
+                                    <div class="col-sm-6 m-auto">
+                                        <img src="extra/image/code.png" alt="" width="30" height="24"><b>WEB DEV</b>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="#"><img class="w-50 mx-auto d-block" style="height: 30px ; justify-content: center; float: right;" src="extra/image/acentos.png" alt=""></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card p-2">
-                    <div class="card-body">
-                        <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <div class="row">
-                            <div class="col-sm-6 m-auto">
-                                <img src="extra/image/code.png" style="float:left;" alt="" width="30" height="24"><b>WEB DEV</b>
-                            </div>
-                            <div class="col-sm-6">
-                                <a href="#"><img class="w-50 mx-auto d-block" style="height: 40px ; justify-content: center; float: right;" src="extra/image/vmware (2).png" alt=""></a>
+                    <div class="col-sm-4">
+                        <div class="card p-2">
+                            <div class="card-body">
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                                <div class="row">
+                                    <div class="col-sm-6 m-auto">
+                                        <img src="extra/image/code.png" style="float:left;" alt="" width="30" height="24"><b>WEB DEV</b>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <a href="#"><img class="w-50 mx-auto d-block" style="height: 40px ; justify-content: center; float: right;" src="extra/image/vmware (2).png" alt=""></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -346,70 +390,72 @@
         <!-- End Seventh Section -->
 
         <!-- Eight Section -->
-        <div class="row seventhsection">
-            <div class="col-sm-3">
-                <h6>PRODUCTS</h6>
-                <li class="">
-                    <a class="" href="#">Droplets</a>
-                </li>
-                <li class="">
-                    <a class="" href="#">Spaces</a>
-                </li>
-                <li class="">
-                    <a class="" href="#">Kubernetes</a>
-                </li>
-                <li class="">
-                    <a class="" href="#">Load Balancers</a>
-                </li>
-                <li class="">
-                    <a class="" href="#">Block Storage</a>
-                </li>
-            </div>
-            <div class="col-sm-3">
-                <h6>RESOURCES</h6>
-                <li class="">
-                    <a class="" href="#">FAQ</a>
-                </li>
-                <li class="">
-                    <a class="" href="#">Docs</a>
-                </li>
-                <li class="">
-                    <a class="" href="#">SLA</a>
-                </li>
-                <li class="">
-                    <a class="" href="#">Server Status</a>
-                </li>
-            </div>
-            <div class="col-sm-3">
-                <h6>COMPANY</h6>
-                <li class="">
-                    <a class="" href="#">About</a>
-                </li>
-                <li class="">
-                    <a class="" href="#">Team</a>
-                </li>
-                <li class="">
-                    <a class="" href="#">Contacts</a>
-                </li>
-            </div>
-            <div class="col-sm-3">
-                <a class="navbar-brand text-light" href="#">
-                    <img src="extra/image/code.png" alt="" width="30" height="24"><b>WEB DEV</b>
-                </a>
-                <p class="text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <div class="col-sm-12">
-                <p class="text-secondary text-center">Over 20,453,083 Servers Launched</p>
-            </div>
-            <div class="col-sm-6">
-                <p class="text-secondary">Copyright 2019 Dummy, All Rights Reserved</p>
-            </div>
-            <div class="col-sm-6 text-end">
-                <li class="">
-                    <a class="" href="#">Terms of Service</a>
-                    <a class="" href="#">AUP/DMCA</a>
-                    <a class="" href="#">Privacy Policy</a>
-                </li>
+        <div class="bg-light">
+            <div class="container">
+                <div class="row seventhsection">
+                    <div class="col-sm-3">
+                        <h6>PRODUCTS</h6>
+                        <li class="">
+                            <a class="" href="#">Droplets</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Spaces</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Kubernetes</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Load Balancers</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Block Storage</a>
+                        </li>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>RESOURCES</h6>
+                        <li class="">
+                            <a class="" href="#">FAQ</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Docs</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">SLA</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Server Status</a>
+                        </li>
+                    </div>
+                    <div class="col-sm-3">
+                        <h6>COMPANY</h6>
+                        <li class="">
+                            <a class="" href="#">About</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Team</a>
+                        </li>
+                        <li class="">
+                            <a class="" href="#">Contacts</a>
+                        </li>
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="extra/image/code.png" alt="" width="30" height="24"><b><span>WEB DEV  </span></b>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="text-secondary text-center">Over 20,453,083 Servers Launched</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="text-secondary">Copyright 2019 Dummy, All Rights Reserved</p>
+                    </div>
+                    <div class="col-sm-6 text-end">
+                        <li class="">
+                            <a class="" href="#">Terms of Service</a>
+                            <a class="" href="#">AUP/DMCA</a>
+                            <a class="" href="#">Privacy Policy</a>
+                        </li>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End Eight Section -->
