@@ -15,7 +15,7 @@
             font-weight: bold;
         }
         p {
-            color: rgb(204, 204, 204);
+            color: rgb(190, 190, 190);
             font-size: 17px;
         }
         .card .card-body>* {
@@ -24,14 +24,11 @@
         .card .card-body > h5 {
             font-weight: 700;
         }
-        .sixthsection .card .card-body {
-            background-color: rgb(0, 97, 189);
-        }
-        .sixthsection .card .card-body > * {
-            color: rgb(204, 204, 204);
-        }
         li {
             list-style-type: none;
+        }
+        a {
+            text-decoration: none;
         }
         li a{
             text-decoration: none;
@@ -64,6 +61,16 @@
         }
         .sixthsection{
             height: 500px;
+        }
+        .sixthsection .card {
+            border: none!important;
+        }
+        .sixthsection .card .card-body {
+            background-color: rgb(12, 130, 240);
+            border-radius: 2px;
+        }
+        .sixthsection .card .card-body > * {
+            color: rgb(204, 204, 204);
         }
         .seventhsection{
             background-color: rgb(248, 248, 248);
@@ -142,7 +149,7 @@
         <!-- end of navbar -->     
 
         <!-- Second Section -->
-        <div class="bg-primary">
+        <div class="container-fluid bg-primary">
             <div class="container">
                 <div class="row secondsection">
                     <div class="col-sm-6 p-5 m-auto">
@@ -161,7 +168,7 @@
         <!-- End Second Section -->
 
         <!-- Third Section logo -->
-        <div class="bg-light">
+        <div class="container-fluid bg-light">
             <div class="container">
                 <div class="row thirdsection">
                     <div class="col m-auto">
@@ -185,7 +192,7 @@
         <!-- End Third Section -->
 
         <!-- Fourth Section Why Choose Us -->
-        <div class="bg-light">
+        <div class="container-fluid bg-light">
             <div class="container">
                 <div class="row fourthsection p-1">
                     <div class="col-sm-12 m-auto">
@@ -197,7 +204,7 @@
                                 <i class="fas fa-file-alt"></i>
                                 <h5 class="card-title">Predictable Pricing</h5>
                                 <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                <a href="#" class="btn btn-primary">Pricing</a>
+                                <a href="#" class="text-primary">Pricing <i class="fas fa-chevron-right" style="font-size: 13px;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -207,7 +214,7 @@
                                 <i class="fas fa-dot-circle"></i>
                                 <h5 class="card-title">World-class service</h5>
                                 <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                <a href="#" class="btn btn-primary">Support</a>
+                                <a href="#" class="text-primary">Support <i class="fas fa-chevron-right" style="font-size: 13px;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -217,7 +224,7 @@
                                 <i class="fas fa-shield-alt"></i>
                                 <h5 class="card-title">Reliable platform</h5>
                                 <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                <a href="#" class="btn btn-primary">Security</a>
+                                <a href="#" class="text-primary">Security <i class="fas fa-chevron-right" style="font-size: 13px;"></i></a>
                             </div>
                         </div>
                     </div>
@@ -227,7 +234,7 @@
         <!-- End Fourth Section -->
 
         <!-- Fifth Section Products -->
-        <div class="bg-light">
+        <div class="container-fluid bg-light">
             <div class="container">
                 <div class="row fifthsection">
                     <div class="col-sm-12 m-auto">
@@ -282,7 +289,7 @@
         <!-- End Fifth Section  -->
 
         <!-- Sixth Section Statistics -->
-        <div class="bg-primary">
+        <div class="container-fluid bg-primary">
             <div class="container">
                 <div class="row sixthsection">
                     <div class="col-sm-12 m-auto">
@@ -333,7 +340,7 @@
         <!-- End Sixth Section -->
 
         <!-- Seventh Section -->
-        <div class="bg-light">
+        <div class="container-fluid bg-light">
             <div class="container">
                 <div class="row seventhsection">
                     <div class="col-sm-12 m-auto">
@@ -378,7 +385,7 @@
                                         <img src="extra/image/code.png" style="float:left;" alt="" width="30" height="24"><b>WEB DEV</b>
                                     </div>
                                     <div class="col-sm-6">
-                                        <a href="#"><img class="w-50 mx-auto d-block" style="height: 40px ; justify-content: center; float: right;" src="extra/image/vmware (2).png" alt=""></a>
+                                        <a href="#"><img class="w-50 mx-auto d-block" style="height: 30px ; justify-content: center; float: right;" src="extra/image/vmware (2).png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
@@ -390,7 +397,7 @@
         <!-- End Seventh Section -->
 
         <!-- Eight Section -->
-        <div class="bg-light">
+        <div class="container-fluid bg-light">
             <div class="container">
                 <div class="row seventhsection">
                     <div class="col-sm-3">
@@ -441,6 +448,19 @@
                     <div class="col-sm-3">
                         <img src="extra/image/code.png" alt="" width="30" height="24"><b><span>WEB DEV  </span></b>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                        <span class="fa-stack fa-1x" style="margin: 0 auto;">
+                            <i class="fa fa-circle fa-stack-2x" style="color: #d4d4d4;"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse" style="color: gray;"></i>
+                        </span>
+                        <span class="fa-stack fa-1x" style="margin: 0 auto;">
+                            <i class="fa fa-circle fa-stack-2x" style="color: #d4d4d4;"></i>
+                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse" style="color: gray;"></i>
+                        </span>
+                        <span class="fa-stack fa-1x" style="margin: 0 auto;">
+                            <i class="fa fa-circle fa-stack-2x" style="color: #d4d4d4;"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x fa-inverse" style="color: gray;"></i>
+                        </span>
                     </div>
                     <div class="col-sm-12">
                         <p class="text-secondary text-center">Over 20,453,083 Servers Launched</p>
